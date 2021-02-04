@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerTableGUI">
+   <children>
+      <Label layoutX="264.0" layoutY="14.0" prefHeight="32.0" prefWidth="109.0" text="Server Side" />
+      <Label layoutX="50.0" layoutY="58.0" prefHeight="17.0" prefWidth="47.0" text="Clients:" />
+      <Label  fx:id="clients" layoutX="105.0" layoutY="58.0"  />
+
+      <SplitPane dividerPositions="0.505922165820643" layoutX="5.0" layoutY="94.0" prefHeight="346.0" prefWidth="593.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="showView" layoutX="29.0" layoutY="43.0" prefHeight="344.0" prefWidth="295.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label layoutX="116.0" layoutY="14.0" prefHeight="17.0" prefWidth="47.0" text="Client 1" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="263.0">
+               <children>
+                  <ListView fx:id="showView2" layoutX="44.0" layoutY="37.0" prefHeight="344.0" prefWidth="288.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label layoutX="127.0" layoutY="14.0" text="Client 2" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button layoutX="501.0" layoutY="480.0" mnemonicParsing="false" onAction="#exit_game" prefHeight="27.0" prefWidth="90.0" text="Exit" />
+      <Button layoutX="140.0" layoutY="53.0" mnemonicParsing="false" onAction="#show" text="Show client 1" />
+      <Button layoutX="446.0" layoutY="53.0" mnemonicParsing="false" onAction="#show2" text="Show client 2" />
+   </children>
+</Pane>

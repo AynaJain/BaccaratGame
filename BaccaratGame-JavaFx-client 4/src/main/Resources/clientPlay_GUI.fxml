@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientPlayGUI">
+   <children>
+      <Button layoutX="555.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit_game" text="Exit" />
+      <Label layoutX="139.0" layoutY="37.0" prefHeight="17.0" prefWidth="40.0" text="Player">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="420.0" layoutY="37.0" text="Banker" />
+      <SplitPane dividerPositions="0.4906937394247039" layoutX="3.0" layoutY="64.0" prefHeight="293.0" prefWidth="593.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="playerIMG1" fitHeight="111.0" fitWidth="80.0" layoutX="20.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="playerIMG2" fitHeight="111.0" fitWidth="80.0" layoutX="192.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="playerIMG3" fitHeight="111.0" fitWidth="80.0" layoutX="103.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="297.0">
+               <children>
+                  <ImageView fx:id="bankerIMG1" fitHeight="118.0" fitWidth="80.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="bankerIMG2" fitHeight="118.0" fitWidth="80.0" layoutX="203.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="bankerIMG3" fitHeight="118.0" fitWidth="80.0" layoutX="109.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <Label fx:id="roundWin" layoutX="146.0" layoutY="461.0" prefHeight="50.0" prefWidth="297.0" />
+      <TextField fx:id="bidAmount" layoutX="82.0" layoutY="376.0" prefHeight="27.0" prefWidth="206.0" promptText="Enter Bidding Amount" />
+      <ToggleButton fx:id="player" layoutX="307.0" layoutY="376.0" mnemonicParsing="false" onAction="#player_action" text="Player" />
+      <ToggleButton fx:id="banker" layoutX="380.0" layoutY="376.0" mnemonicParsing="false" onAction="#banker_action" text="Banker" />
+      <ToggleButton fx:id="tie" layoutX="463.0" layoutY="376.0" mnemonicParsing="false" onAction="#tie_action" text="Tie" />
+      <Label layoutX="65.0" layoutY="427.0" />
+      <Label layoutX="61.0" layoutY="484.0" text="Round Win: " />
+      <Label layoutX="69.0" layoutY="522.0" text="Total Win: " />
+      <Label fx:id="totalWin" layoutX="159.0" layoutY="522.0" prefHeight="17.0" prefWidth="81.0" />
+      <Button fx:id="play_B" layoutX="516.0" layoutY="376.0" mnemonicParsing="false" onAction="#play" text="Play" />
+      <Button layoutX="381.0" layoutY="431.0" mnemonicParsing="false" onAction="#show_cards" text="Show Cards" />
+      <TextArea layoutX="146.0" layoutY="415.0" prefHeight="5.0" prefWidth="0.0" />
+   </children>
+</Pane>

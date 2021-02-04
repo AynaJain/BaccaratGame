@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGUI">
+   <children>
+      <TextField fx:id="ip_address" layoutX="226.0" layoutY="68.0" promptText="Enter the IP address" />
+      <TextField fx:id="port_id" layoutX="226.0" layoutY="141.0" promptText="Enter the port number" />
+      <Button layoutX="287.0" layoutY="232.0" mnemonicParsing="false" onAction="#client_connected" text="Play" />
+   </children>
+</Pane>
